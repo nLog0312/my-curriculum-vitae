@@ -1,0 +1,323 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Common */
+.box-custom {
+    background-color: #fff;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.text-blue {
+    color: #0A84ff;
+}
+
+.text-gray {
+    color: #999999;
+    text-decoration: none;
+}
+
+.cur {
+    cursor: pointer;
+}
+
+.text-dec {
+    text-decoration: none;
+    color: #333;
+}
+
+.width-half {
+    width: 48%;
+}
+
+a {
+    text-decoration: none;
+    display: inherit;
+}
+
+#header a:visited,
+#header a:link,
+#header a:active {
+    color: #999999;
+}
+
+#content a:visited,
+#content a:link,
+#content a:active {
+    color: #0A84ff;
+}
+
+li {
+    list-style: none;
+}
+/* Main */
+
+#main {
+    height: 1348px;
+    background-image: url(../img/background-repeat.png);
+    background-size: 250px 250px;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+}
+
+#body {
+    width: 90%;
+    height: 100%;
+}
+
+    /* Start Header CSS*/
+#header {
+    width: 100%;
+    height: 288px;
+}
+
+/* CSS Person Image */
+#header #img-profile {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 28px;
+    float: left;
+}
+
+#header #img-profile img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* CSS Person Infomation */
+#header #info-person {
+    width: calc(60% + 32px);
+    height: 60%;
+    margin: 32px;
+    float: left;
+}
+
+#header #info-person h2 {
+    margin-bottom: 8px;
+    font-size: 31px;
+    text-transform: uppercase;
+}
+
+#header #info-person h4 {
+    margin-bottom: 16px;
+}
+
+#header #info-person #personal-information {
+    width: 100%;
+    height: calc(100% - 46.67px - 32px);
+    position: relative;
+}
+
+#personal-information .table-fir,
+#personal-information .table-sec,
+#personal-information .table-thir {
+    width: 40%;
+    position: absolute;
+    float: left;
+}
+
+#personal-information .table-sec {
+    left: calc(33.33333% + 16px);
+}
+
+#personal-information .table-thir {
+    left: calc(66.66666% + 16px);
+}
+
+#personal-information li {
+    margin-bottom: 12px;
+}
+
+#personal-information li i {
+    width: 15%;
+    float: left;
+}
+
+/* CSS Career Goals */
+#header .career-goal {
+    position: absolute;
+    width: 80%;
+    height: 56px;
+    left: 8%;
+    bottom: 20px;
+    line-height: 20px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+    /* End Header CSS*/
+
+    /* Start Content CSS */
+#content {
+    width: 100%;
+    height: calc(100% - 320px);
+    position: relative;
+}
+/* Common In Content */
+.style-title {
+    width: 100%;
+}
+
+.title-box {
+    height: 56px;
+    border-bottom: #999999 solid 3px;
+    border-radius: 15px 15px 0 0;
+    line-height: 56px;
+}
+
+.body-box {
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.body-box ul {
+    height: calc(100% - 32px);
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.margin-t{
+    margin-top: 16px;
+}
+
+.border-content {
+    text-align: center;
+    line-height: 28px;
+    background-color: #e7f3ff;
+}
+/* Main Content CSS */
+#left-content{
+    position: absolute;
+    left: 0;
+}
+
+#right-content{
+    position: absolute;
+    right: 0;
+}
+
+#content i {
+    line-height: 56px;
+    margin: 0 16px;
+    font-size: 26px;
+}
+
+#content h2 {
+    font-size: 26px;
+}
+
+#content li {
+    margin-top: 16px;
+}
+
+#content .dot {
+    width: 28px;
+    height: 28px;
+    font-size: 24px;
+    margin-right: 15px;
+    margin-top: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* Education CSS */
+#education {
+    height: 280px;
+}
+
+.body-box .university {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.body-box .duration {
+    border-radius: 15px;
+    padding: 3px 15px;
+}
+
+.body-box .major {
+    margin-top: 66px !important; 
+}
+
+/* Work Experience CSS */
+#work_experience {
+    height: 690px;
+}
+
+.content1 .percent-bar{
+    margin-top: 16px;
+    margin-left: 16px;
+    width: 90%;
+    height: 32px;
+    background-color: #e7f3ff;
+}
+
+.percent-bar .percent-left {
+    width: 37%;
+    background-color: rgb(174, 174, 174);
+}
+
+.percent-bar .percent-right {
+    width: 63%;
+}
+
+.percent-bar .percent-left,
+.percent-bar .percent-right {
+    height: 100%;
+    text-align: center;
+    line-height: 32px;
+    float: left;
+    font-size: 17px;
+}
+#work_experience .content2 {
+    margin-top: 32px;
+}
+
+/* Skills CSS */
+#skills {
+    height: 280px;
+}
+
+#skills .compu{
+    padding-top: 28px;
+}
+
+/* Honors Awards CSS */
+#honors-awards {
+    height: 200px;
+}
+
+/* Interests CSS */
+#interests {
+    height: 120px;
+}
+    /* End Content CSS */
+
+/* Hover CSS */
+#header:hover,
+#left-content #education:hover,
+#left-content #work_experience:hover,
+#right-content #skills:hover,
+#right-content #honors-awards:hover,
+#right-content #interests:hover {
+    transform: scale(1.05);
+}
